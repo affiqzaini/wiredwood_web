@@ -1,16 +1,18 @@
 <template>
-  <div class="components__contactDetails">
-    <v-container fluid class="">
-      <div>
-        <p class="mb-0">affiq zaini</p>
-        <p>+601 - 11 1111 1111</p>
+  <div class="components__contactDetails center-all">
+    <div class="mx-auto">
+      <div class="text-left">
+        <p class="mb-0">name : affiq zaini</p>
+        <p class="mb-0">email : off.affiqzaini@gmail.com</p>
+        <p>phone : +601 - 11 1128 3226</p>
       </div>
 
-      <div>
-        <p class="mb-0">eirsyad qawiem</p>
-        <p>+601 - 11 1111 1111</p>
+      <div class="text-left">
+        <p class="mb-0">name : eirsyad qawiem</p>
+        <p class="mb-0">email : eirsyad.projects@gmail.com</p>
+        <p>phone : +601 - 12 211 0991</p>
       </div>
-    </v-container>
+    </div>
   </div>
 </template>
 

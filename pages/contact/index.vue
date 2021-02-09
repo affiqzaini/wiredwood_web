@@ -9,6 +9,9 @@ import { Vue, Component } from "nuxt-property-decorator";
 import ContactDetails from "~/components/Contact/ContactDetails.vue";
 
 @Component({
+  head: {
+    title: "Contact"
+  },
   components: {
     ContactDetails
   }
