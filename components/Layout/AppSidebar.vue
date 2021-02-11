@@ -1,21 +1,25 @@
 <template>
-  <div class="components__appSidebar">
-    <v-container class="sidebar pa-5">
-      <p class="text-h5 text-link" @click.prevent="$router.push('/')">
-        Wired Wood Sound
-      </p>
+  <v-container class="components__appSidebar">
+    <v-img
+      contain
+      width="200"
+      src="/images/logo.png"
+      class="text-link mb-5 mx-auto"
+      @click.prevent="$router.push('/')"
+    />
 
+    <div class="center-all">
       <p
         v-for="(item, index) in routes"
         :key="index"
-        class="text-link"
+        class="text-link mx-5"
         :class="path.includes(item.to) ? 'font-weight-bold' : null"
         @click.prevent="$router.push(item.to)"
       >
         {{ item.title }}
       </p>
-    </v-container>
-  </div>
+    </div>
+  </v-container>
 </template>
 
 <script lang="ts">
@@ -25,8 +29,8 @@ import { Vue, Component } from "nuxt-property-decorator";
 export default class AppSidebar extends Vue {
   routes: Array<Object> = [
     { title: "About", to: "about" },
+    { title: "Recordings", to: "recordings" },
     { title: "Contact", to: "contact" },
-    { title: "Recordings", to: "recordings" }
   ];
 
   get path() {
