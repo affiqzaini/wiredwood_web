@@ -1,7 +1,7 @@
 <template>
   <div class="components__recordingList">
     <v-row class="recording-row mx-auto">
-      <v-col cols="12" md="6" v-for="(item, index) in tracks" :key="index">
+      <v-col cols="12" md="6" v-for="(item, index) in tracks" :key="index" class="recording-list">
         <track-item :item="item" />
       </v-col>
     </v-row>
@@ -50,5 +50,12 @@ export default class RecordingList extends Vue {
 <style lang="scss" scoped>
 .recording-row {
   max-width: 1000px;
+}
+
+.recording-list{
+  &:last-child {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 </style>
