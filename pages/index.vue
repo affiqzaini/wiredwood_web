@@ -9,9 +9,7 @@
     />
 
     <p class="text-caption text-center">
-      Our homepage features an artwork by<b> Nam June Paik </b> “TV Cello”,
-      1976. (acrylic, wood, bass guitar strings, three CRT monitors, analogue
-      tape (VHS) shown as single channel digital video, black and white, silent)
+      <b> Nam June Paik </b> “TV Cello”,1976.
     </p>
   </div>
 </template>
